@@ -11,12 +11,10 @@ def double_letters(word):
         return False
     else:
         id = 0
-        for let in word:
-            #if let[id] == let[id+1]:
-            arg = let
+        for let in range(len(word)):
+            if let[id] == let[id+1]:
+                return True
             id += 1
-        return arg, id
-
 
 answer1 = double_letters("hello")
 answer2 = double_letters("nano")
